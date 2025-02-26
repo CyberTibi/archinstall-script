@@ -635,6 +635,8 @@ systemctl stop dhcpcd.service
 echo "  DHCP stopped"
 systemctl enable NetworkManager.service
 echo "  NetworkManager enabled"
+systemctl enable reflector.timer
+echo "  Reflector timer enabled"
 
 echo -ne "
 -------------------------------------------------------------------------
