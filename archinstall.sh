@@ -503,6 +503,18 @@ timedatectl --no-ask-password set-ntp 1
 localectl --no-ask-password set-locale LANG="hu_HU.UTF-8" LC_TIME="hu_HU.UTF-8"
 ln -s /usr/share/zoneinfo/${TIMEZONE} /etc/localtime
 
+# Set locale
+echo "LANG=hu_HU.UTF-8" > /etc/locale.conf
+echo "LC_ADDRESS=hu_HU.UTF-8" >> /etc/locale.conf
+echo "LC_IDENTIFICATION=hu_HU.UTF-8" >> /etc/locale.conf
+echo "LC_MEASUREMENT=hu_HU.UTF-8" >> /etc/locale.conf
+echo "LC_MONETARY=hu_HU.UTF-8" >> /etc/locale.conf
+echo "LC_NAME=hu_HU.UTF-8" >> /etc/locale.conf
+echo "LC_NUMERIC=hu_HU.UTF-8" >> /etc/locale.conf
+echo "LC_PAPER=hu_HU.UTF-8" >> /etc/locale.conf
+echo "LC_TELEPHONE=hu_HU.UTF-8" >> /etc/locale.conf
+echo "LC_TIME=hu_HU.UTF-8" >> /etc/locale.conf
+
 # Set keymaps
 echo "KEYMAP=${KEYMAP}" > /etc/vconsole.conf
 echo "XKBLAYOUT=${KEYMAP}" >> /etc/vconsole.conf
