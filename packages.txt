@@ -1,16 +1,11 @@
-sudo pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-yay -S --needed - < packages.txt
 ### System ###
 amd-ucode
 base
 bash-completion
 efibootmgr
 grub
-grub-btrfs
-intel-ucode
+# grub-btrfs
+# intel-ucode
 linux
 linux-firmware
 linux-headers
@@ -21,13 +16,13 @@ syslinux
 accountsservice
 acpi
 acpid
-#arch-install-scripts
-#archinstall
+# arch-install-scripts
+# archinstall
 avahi
 base-devel
 bind
 bolt
-btrfs-progs
+# btrfs-progs
 cpupower
 cryptsetup
 device-mapper
@@ -57,8 +52,8 @@ lsof
 lvm2
 man-db
 man-pages
-memtest86+
-memtest86+-efi
+# memtest86+
+# memtest86+-efi
 mtools
 mtpfs
 pacman-contrib
@@ -80,8 +75,8 @@ usbmuxd
 usbutils
 ### Network tools ###
 inetutils
-iw
-iwd
+# iw
+# iwd
 ndisc6
 net-tools
 network-manager-applet
@@ -92,30 +87,30 @@ nss-mdns
 openconnect
 openssh
 openvpn
-#samba
-wireless-regdb
+# samba
+# wireless-regdb
 ### Graphics drivers ###
-#lib32-libva-intel-driver
+# lib32-libva-intel-driver
 lib32-mesa
 lib32-mesa-utils
-#lib32-vulkan-intel
-#lib32-vulkan-nouveau
+# lib32-vulkan-intel
+# lib32-vulkan-nouveau
 lib32-vulkan-radeon
-#libva-intel-driver
+# libva-intel-driver
 mesa-utils
-#vulkan-intel
-#vulkan-nouveau
+# vulkan-intel
+# vulkan-nouveau
 vulkan-radeon
 xf86-video-amdgpu
 xf86-video-ati
-#xf86-video-intel
-#xf86-video-nouveau
+# xf86-video-intel
+# xf86-video-nouveau
 ### Input drivers ###
 numlockx
-#xf86-input-elographics
-#xf86-input-evdev
+# xf86-input-elographics
+# xf86-input-evdev
 xf86-input-libinput
-#xf86-input-void
+# xf86-input-void
 ### Audio drivers ###
 alsa-firmware
 alsa-plugins
@@ -209,7 +204,7 @@ jre-openjdk
 libwnck3
 meld
 mugshot
-virtualbox-guest-utils
+# virtualbox-guest-utils
 ### Multimedia tools ###
 gst-libav
 gst-plugins-bad
@@ -227,15 +222,15 @@ tumbler
 ### Themes ###
 gnome-themes-extra
 papirus-icon-theme
-#xcursor-vanilla-dmz-aa
+# xcursor-vanilla-dmz-aa
 ### Blooetoth ###
-blueman
-bluez
-bluez-deprecated-tools
-bluez-utils
+# blueman
+# bluez
+# bluez-deprecated-tools
+# bluez-utils
 ### Printer ###
-cups
-cups-pdf
+# cups
+# cups-pdf
 ### Fonts ###
 adobe-source-sans-fonts
 freetype2
