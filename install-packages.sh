@@ -1,12 +1,12 @@
 #!/bin/bash
 # install-packages.sh
-# Telepít csomagokat egy packageslist.txt fájlból pacman/yay segítségével
+# Telepít csomagokat egy packages.txt fájlból pacman/yay segítségével
 # A fájl soronként tartalmazza a csomagneveket, '#' jelű sorok kommentek.
 
-LIST="packageslist.txt"
+LIST="packages.txt"
 
 if [[ ! -f "$LIST" ]]; then
-    echo "Hiba: $LIST nem található!"
+    echo "Error: $LIST not found!"
     exit 1
 fi
 
@@ -16,6 +16,6 @@ while read -r pkg; do
     [[ -z "$pkg" || "$pkg" =~ ^# ]] && continue
 
     # Telepítés yay-jal (kezeli AUR-t és hivatalos repót is)
-    echo ">>> Telepítés: $pkg"
+    echo ">>> Install: $pkg"
     yay -S --needed --noconfirm "$pkg"
 done < "$LIST"
