@@ -4,79 +4,51 @@ base
 bash-completion
 efibootmgr
 grub
-# grub-btrfs
-# intel-ucode
+grub-btrfs
+intel-ucode
 linux
 linux-firmware
 linux-headers
 mkinitcpio
+mkinitcpio-archiso
 os-prober
 syslinux
 ### System tools ###
-accountsservice
-acpi
-acpid
-# arch-install-scripts
-# archinstall
-avahi
 base-devel
 bind
-bolt
-# btrfs-progs
-cpupower
-cryptsetup
-device-mapper
-diffutils
-dmidecode
+btrfs-progs
 dnsmasq
 dosfstools
-e2fsprogs
-ecryptfs-utils
-edk2-shell
-ethtool
-exfatprogs
-f2fs-tools
-fatresize
 git
 git-lfs
 glibc-locales
-gsmartcontrol
-ldns
 less
 libdvdcss
 libgsf
 libopenraw
 libusb-compat
-logrotate
-lsof
 lvm2
 man-db
 man-pages
-# memtest86+
-# memtest86+-efi
+memtest86+
+memtest86+-efi
 mtools
-mtpfs
+nfs-utils
+ntfs-3g
 pacman-contrib
-parted
 perl
 perl-file-mimeinfo
-poppler-glib
-refind
 reflector
 rtkit
 sudo
-sysfsutils
-tpm2-tools
-tpm2-tss
-udiskie
-udisks2
+squashfs-tools
 usb_modeswitch
 usbmuxd
 usbutils
 ### Network tools ###
 inetutils
-# iw
-# iwd
+iw
+iwd
 ndisc6
 net-tools
 network-manager-applet
@@ -87,30 +59,29 @@ nss-mdns
 openconnect
 openssh
 openvpn
-# samba
-# wireless-regdb
+wireless-regdb
 ### Graphics drivers ###
-# lib32-libva-intel-driver
+lib32-libva-intel-driver
 lib32-mesa
 lib32-mesa-utils
-# lib32-vulkan-intel
-# lib32-vulkan-nouveau
+lib32-vulkan-intel
+lib32-vulkan-nouveau
 lib32-vulkan-radeon
-# libva-intel-driver
+libva-intel-driver
 mesa-utils
-# vulkan-intel
-# vulkan-nouveau
+vulkan-intel
+vulkan-nouveau
 vulkan-radeon
 xf86-video-amdgpu
 xf86-video-ati
-# xf86-video-intel
-# xf86-video-nouveau
+xf86-video-intel
+xf86-video-nouveau
 ### Input drivers ###
 numlockx
-# xf86-input-elographics
-# xf86-input-evdev
+xf86-input-elographics
+xf86-input-evdev
 xf86-input-libinput
-# xf86-input-void
+xf86-input-void
 ### Audio drivers ###
 alsa-firmware
 alsa-plugins
@@ -125,23 +96,14 @@ sof-firmware
 wireplumber
 ### Console apps ###
 7zip
-android-tools
-android-udev
 curl
-gptfdisk
 htop
-inxi
-micro
 nano
 nano-syntax-highlighting
 plocate
-powertop
-pv
 rsync
 unace
 unrar
-vi
-vim
 wget
 which
 zsh
@@ -149,15 +111,76 @@ zsh-autosuggestions
 zsh-completions
 zsh-history-substring-search
 zsh-syntax-highlighting
+### Desktop portal ###
+xdg-desktop-portal-gtk
+xdg-user-dirs
+xdg-utils
+xiccd
+### Blooetoth ###
+blueman
+bluez
+bluez-deprecated-tools
+bluez-utils
+### Printer ###
+cups
+cups-pdf
+### Fonts ###
+adobe-source-sans-fonts
+freetype2
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-liberation
+ttf-meslo-nerd
+ttf-opensans
+### Xorg ###
+xorg-mkfontscale
+xorg-server
+xorg-twm
+xorg-xdpyinfo
+xorg-xinit
+xorg-xinput
+xorg-xkill
+xorg-xrandr
+### Multimedia tools ###
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+### File manager ###
+gvfs
+gvfs-afc
+gvfs-gphoto2
+gvfs-mtp
+gvfs-smb
+tumbler
+### Themes ###
+gnome-themes-extra
+papirus-icon-theme
+### Desktop apps ###
+engrampa
+evince
+ffmpeg
+ffmpegthumbnailer
+firefox
+gparted
+jre-openjdk
+mugshot
+open-vm-tools
+qemu-guest-agent
+virtualbox-guest-utils
 ### Xfce4 ###
 exo
 garcon
+libwnck3
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
-mousepad
-parole
-ristretto
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
@@ -184,78 +207,18 @@ xfdesktop
 xfsprogs
 xfwm4
 xfwm4-themes
-### Desktop portal ###
-xdg-desktop-portal-gtk
-xdg-user-dirs
-xdg-utils
-xiccd
-### Desktop apps ###
-engrampa
-evince
-ffmpeg
-ffmpegthumbnailer
-firefox
-firefox-i18n-hu
-thunderbird
-thunderbird-i18n-hu
-gcolor3
-gparted
-jre-openjdk
-libwnck3
-meld
-mugshot
-# virtualbox-guest-utils
-### Multimedia tools ###
-gst-libav
-gst-plugins-bad
-gst-plugins-base
-gst-plugins-good
-gst-plugins-ugly
-### File manager ###
-gvfs
-gvfs-afc
-gvfs-gphoto2
-gvfs-mtp
-gvfs-smb
-ntfs-3g
-tumbler
-### Themes ###
-gnome-themes-extra
-papirus-icon-theme
-# xcursor-vanilla-dmz-aa
-### Blooetoth ###
-# blueman
-# bluez
-# bluez-deprecated-tools
-# bluez-utils
-### Printer ###
-# cups
-# cups-pdf
-### Fonts ###
-adobe-source-sans-fonts
-freetype2
-noto-fonts
-noto-fonts-cjk
-noto-fonts-emoji
-noto-fonts-extra
-terminus-font
-ttf-bitstream-vera
-ttf-dejavu
-ttf-liberation
-ttf-meslo-nerd
-ttf-opensans
-### Xorg ###
-xorg-mkfontscale
-xorg-server
-xorg-twm
-xorg-xdpyinfo
-xorg-xinit
-xorg-xinput
-xorg-xkill
-xorg-xrandr
-##### AUR #####
+##### custom repo #####
 libpamac-aur
 pamac-aur
 zsh-theme-powerlevel10k
+yay
 matcha-gtk-theme
-localsend-bin
+### Calamares packages ###
+calamares-git
+kcoreaddons
+kpmcore
+libpwquality
+qt6-declarative
+qt6-svg
+squashfs-tools
+yaml-cpp
